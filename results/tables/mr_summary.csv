@@ -1,0 +1,10 @@
+# Positive control (GPNMB): MR OR=1.49 [1.289-1.727] recovers expected direction; coloc PP4=1.000. Gate: PASSED.
+# DEVIATION: the pre-registered gate required the positive control to recover on BOTH pQTL platforms; it recovers on deCODE only (UKB-PPP OR=0.994 [0.896-1.102], n=4 instruments). The UKB-PPP arm of every null call below is therefore UNGATED, and cross-platform concordance claims must disclose this.
+# PP4: 'NE' = NOT ESTIMABLE (6 cells). coloc.susie found no overlapping credible sets between the pQTL and PD signals at that locus, so no posterior exists. Report as 'no overlapping credible sets under SuSiE fine-mapping; PP4 not estimable', NOT as 'no colocalization (PP4 = 0)'. CAVEAT ON THE CALLS BELOW: the causal_call logic treats a non-estimable PP4 as below the PP4>=0.8 threshold, i.e. as NOT supporting colocalization. That is an assumption, not a measurement -- absence of a computable posterior is not evidence of absent colocalization -- and it is load-bearing for the 'null' calls.
+"protein","role","decode_or_ci","ukbppp_or_ci","decode_pp4","ukbppp_pp4","causal_call"
+"PDGFRB","primary","0.992 [0.961-1.024]","0.973 [0.922-1.027]","NE (no credible sets)","NE (no credible sets)","null"
+"ICAM1","secondary","0.988 [0.937-1.043]","1.176 [1.046-1.321]","NE (no credible sets)","NE (no credible sets)","discordant"
+"VCAM1","secondary","nan","4.541 [1.756-11.743]","nan","NE (no credible sets)","inconclusive"
+"MMP9","secondary","0.896 [0.559-1.434]","0.959 [0.758-1.215]","0.018","0.007","inconclusive"
+"MMP2","secondary","0.787 [0.518-1.197]","nan","NE (no credible sets)","nan","inconclusive"
+"TIMP1","secondary","nan","nan","nan","nan","not_testable"
