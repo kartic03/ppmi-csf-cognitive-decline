@@ -1,0 +1,147 @@
+{
+  "cv": {
+    "n_outer": 5,
+    "n_inner": 5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "n": 607,
+  "thin": [
+    "age",
+    "SEX",
+    "EDUCYRS",
+    "moca",
+    "updrs3_score",
+    "duration_yrs",
+    "LEDD",
+    "APOE_e4",
+    "gba_status",
+    "MIA_PUTAMEN_BILAT"
+  ],
+  "enriched": [
+    "age",
+    "SEX",
+    "EDUCYRS",
+    "moca",
+    "updrs3_score",
+    "duration_yrs",
+    "LEDD",
+    "APOE_e4",
+    "gba_status",
+    "MIA_CAUDATE_BILAT",
+    "COG_COMPOSITE_INT",
+    "gds",
+    "stai",
+    "rem"
+  ],
+  "results": {
+    "eb_slope|thin": {
+      "r2_base": 0.06921477353696548,
+      "r2_aug": 0.12734763266201798,
+      "dr2": 0.058132859125052505,
+      "dr2_repeat_lo": 0.04942184040747899,
+      "dr2_repeat_hi": 0.06424489024462798
+    },
+    "eb_slope|enriched": {
+      "r2_base": 0.21064665405022087,
+      "r2_aug": 0.25624884189927966,
+      "dr2": 0.045602187849058784,
+      "dr2_repeat_lo": 0.027969644479118316,
+      "dr2_repeat_hi": 0.05133988445838389
+    },
+    "ols_slope|thin": {
+      "r2_base": 0.058642927815101276,
+      "r2_aug": 0.1211071222267378,
+      "dr2": 0.06246419441163653,
+      "dr2_repeat_lo": 0.04731906696830579,
+      "dr2_repeat_hi": 0.07233648335142695
+    },
+    "ols_slope|enriched": {
+      "r2_base": 0.16687543347686018,
+      "r2_aug": 0.21850531031636244,
+      "dr2": 0.051629876839502264,
+      "dr2_repeat_lo": 0.045128736137942216,
+      "dr2_repeat_hi": 0.065372332597331
+    },
+    "slope_excl_baseline|thin": {
+      "r2_base": 0.02609730150897771,
+      "r2_aug": 0.0524533757158433,
+      "dr2": 0.026356074206865587,
+      "dr2_repeat_lo": 0.0034798920481887707,
+      "dr2_repeat_hi": 0.03929171325559999
+    },
+    "slope_excl_baseline|enriched": {
+      "r2_base": 0.03504161682092499,
+      "r2_aug": 0.06203980221565086,
+      "dr2": 0.02699818539472587,
+      "dr2_repeat_lo": 0.007356896840677307,
+      "dr2_repeat_hi": 0.033502390470062426
+    },
+    "strata|few-visit": {
+      "n": 344,
+      "dr2": 0.0663415080788261,
+      "r2_base": 0.06003231365182937,
+      "r2_aug": 0.12637382173065548
+    },
+    "strata|many-visit": {
+      "n": 263,
+      "dr2": 0.03073372451716061,
+      "r2_base": -0.1060678154773893,
+      "r2_aug": -0.0753340909602287
+    },
+    "selection": [
+      {
+        "var": "age",
+        "retained_mean": 62.08054884791587,
+        "excluded_mean": 62.618771711345616,
+        "diff": -0.5382228634297448
+      },
+      {
+        "var": "moca",
+        "retained_mean": 26.89621087314662,
+        "excluded_mean": 26.620192307692307,
+        "diff": 0.276018565454315
+      },
+      {
+        "var": "EDUCYRS",
+        "retained_mean": 15.752883031301483,
+        "excluded_mean": 15.69377990430622,
+        "diff": 0.059103126995262656
+      },
+      {
+        "var": "updrs3_score",
+        "retained_mean": 21.480206540447504,
+        "excluded_mean": 22.10989010989011,
+        "diff": -0.6296835694426051
+      },
+      {
+        "var": "COG_COMPOSITE_INT",
+        "retained_mean": -0.40624032354682377,
+        "excluded_mean": -0.41751420748713974,
+        "diff": 0.011273883940315976
+      },
+      {
+        "var": "n_visits",
+        "retained_mean": 8.181219110378912,
+        "excluded_mean": 5.717703349282297,
+        "diff": 2.463515761096615
+      },
+      {
+        "var": "span_years",
+        "retained_mean": 8.05623885716865,
+        "excluded_mean": 5.24380939896441,
+        "diff": 2.8124294582042397
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "cv_config": {
+    "n_outer": 5,
+    "n_inner": 5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "param_grid": {
+    "alpha": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ]
+  },
+  "outcome_col": "eb_slope",
+  "arms": {
+    "anchor_csf": {
+      "label": "CSF block (committed)",
+      "n": 607,
+      "r2_base": 0.06921477353696548,
+      "r2_aug": 0.12734763266201798,
+      "dr2": 0.058132859125052505,
+      "repeat_lo": 0.04942184040747899,
+      "repeat_hi": 0.06424489024462798
+    },
+    "neg_saa_csfset": {
+      "label": "SAA positivity",
+      "n": 605,
+      "r2_base": 0.051715151082056376,
+      "r2_aug": 0.05054642018230704,
+      "dr2": -0.0011687308997493373,
+      "repeat_lo": -0.006001521677773347,
+      "repeat_hi": -6.39570493682351e-05
+    },
+    "neg_assay_csfset": {
+      "label": "SAA assay version (technical)",
+      "n": 607,
+      "r2_base": 0.06921477353696548,
+      "r2_aug": 0.07003816838894583,
+      "dr2": 0.0008233948519803524,
+      "repeat_lo": -0.005683899880502663,
+      "repeat_hi": 0.0008233948519803524
+    },
+    "neg_noise_csfset": {
+      "label": "5 random Gaussians",
+      "n": 607,
+      "r2_base": 0.06921477353696548,
+      "r2_aug": 0.07585937308242463,
+      "dr2": 0.006644599545459151,
+      "repeat_lo": -0.015041511889942738,
+      "repeat_hi": 0.009782153605842892
+    },
+    "neg_saa_max": {
+      "label": "SAA positivity",
+      "n": 746,
+      "r2_base": 0.06312583701206798,
+      "r2_aug": 0.06327356940976203,
+      "dr2": 0.00014773239769405588,
+      "repeat_lo": -0.0034868371290538436,
+      "repeat_hi": 0.0035882487920102513
+    },
+    "neg_assay_max": {
+      "label": "SAA assay version (technical)",
+      "n": 751,
+      "r2_base": 0.053561993406068265,
+      "r2_aug": 0.052150226188653614,
+      "dr2": -0.00141176721741465,
+      "repeat_lo": -0.004163252833543352,
+      "repeat_hi": 0.0006038754723068918
+    },
+    "pos_APOE_e4": {
+      "label": "APOE e4 (established)",
+      "n": 808,
+      "r2_base": 0.075706265402251,
+      "r2_aug": 0.07543840180855821,
+      "dr2": -0.00026786359369279644,
+      "repeat_lo": -0.005413527838835863,
+      "repeat_hi": 0.0037292247993131467
+    },
+    "pos_gba_status": {
+      "label": "GBA carrier (established)",
+      "n": 816,
+      "r2_base": 0.0648198337909347,
+      "r2_aug": 0.07640832838951106,
+      "dr2": 0.01158849459857636,
+      "repeat_lo": 0.009463969090883984,
+      "repeat_hi": 0.018128462496586617
+    }
+  },
+  "prs_status": "NOT RUN \u2014 no PPMI genotypes in project; needs LONI imputed-genotype release + Nalls 2019 weights",
+  "saa_coding": "1=positive, 0=negative; codes 2 (n=10) and 3 (n=18) undocumented in the available dictionary and therefore dropped, not guessed",
+  "caveat": "brackets are cross-seed repeat ranges, NOT confidence intervals"
+}

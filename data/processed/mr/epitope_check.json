@@ -1,0 +1,273 @@
+{
+  "source": "Ensembl VEP REST",
+  "n_flagged": 0,
+  "variants": [
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs74908652",
+      "weight_frac": 0.5814718884612701,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs74827019",
+      "weight_frac": 0.29963955013815935,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs140787039",
+      "weight_frac": 0.040526357335908654,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs138890359",
+      "weight_frac": 0.02386847111084977,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs143368517",
+      "weight_frac": 0.021713000871544354,
+      "most_severe": "upstream_gene_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs59451215",
+      "weight_frac": 0.020780225230844124,
+      "most_severe": "upstream_gene_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs140539236",
+      "weight_frac": 0.007223363764052724,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "intron_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "rsid": "rs12977159",
+      "weight_frac": 0.004777143087371033,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "ukbppp",
+      "rsid": "rs2569702",
+      "weight_frac": 0.9756403186520869,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "ukbppp",
+      "rsid": "rs117960796",
+      "weight_frac": 0.024359681347913196,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "decode",
+      "rsid": "rs2304058",
+      "weight_frac": 0.9352838278278275,
+      "most_severe": "3_prime_UTR_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "3_prime_UTR_variant",
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "decode",
+      "rsid": "rs2855783",
+      "weight_frac": 0.02686047780192712,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "decode",
+      "rsid": "rs36085208",
+      "weight_frac": 0.019248437706818698,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "decode",
+      "rsid": "rs72830245",
+      "weight_frac": 0.013058425602468293,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "decode",
+      "rsid": "rs200697025",
+      "weight_frac": 0.005548831060958351,
+      "most_severe": "intergenic_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": []
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "ukbppp",
+      "rsid": "rs246394",
+      "weight_frac": 0.6950811936577068,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "upstream_gene_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "ukbppp",
+      "rsid": "rs10476749",
+      "weight_frac": 0.17868566357434837,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "intron_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "ukbppp",
+      "rsid": "rs6859162",
+      "weight_frac": 0.11379361939205185,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "intron_variant"
+      ]
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "ukbppp",
+      "rsid": "rs17797412",
+      "weight_frac": 0.012439523375892853,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ]
+    }
+  ]
+}

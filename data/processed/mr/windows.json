@@ -1,0 +1,50 @@
+{
+  "ICAM1": {
+    "chrom": "19",
+    "gene_start": 10271093,
+    "gene_end": 10286615,
+    "cis_start": 9771093,
+    "cis_end": 10786615,
+    "strand": 1
+  },
+  "MMP9": {
+    "chrom": "20",
+    "gene_start": 46008908,
+    "gene_end": 46016561,
+    "cis_start": 45508908,
+    "cis_end": 46516561,
+    "strand": 1
+  },
+  "PDGFRB": {
+    "chrom": "5",
+    "gene_start": 150113839,
+    "gene_end": 150155872,
+    "cis_start": 149613839,
+    "cis_end": 150655872,
+    "strand": -1
+  },
+  "TIMP1": {
+    "chrom": "X",
+    "gene_start": 47582408,
+    "gene_end": 47586789,
+    "cis_start": 47082408,
+    "cis_end": 48086789,
+    "strand": 1
+  },
+  "VCAM1": {
+    "chrom": "1",
+    "gene_start": 100719742,
+    "gene_end": 100739045,
+    "cis_start": 100219742,
+    "cis_end": 101239045,
+    "strand": 1
+  },
+  "MMP2": {
+    "chrom": "16",
+    "gene_start": 55478191,
+    "gene_end": 55506691,
+    "strand": 1,
+    "cis_start": 54978191,
+    "cis_end": 56006691
+  }
+}

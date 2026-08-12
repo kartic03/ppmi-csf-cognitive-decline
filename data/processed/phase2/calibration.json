@@ -1,0 +1,139 @@
+{
+  "continuous": {
+    "n": 607,
+    "calib_slope": 1.0058,
+    "calib_intercept": -0.0004,
+    "conformal_level": 0.9,
+    "conformal_coverage": 0.9012,
+    "mean_interval_width": 1.0369,
+    "calibration_curve": [
+      {
+        "mean_pred": -0.3631,
+        "mean_obs": -0.4131,
+        "n": 61
+      },
+      {
+        "mean_pred": -0.2386,
+        "mean_obs": -0.2751,
+        "n": 61
+      },
+      {
+        "mean_pred": -0.1864,
+        "mean_obs": -0.1785,
+        "n": 60
+      },
+      {
+        "mean_pred": -0.151,
+        "mean_obs": -0.1355,
+        "n": 61
+      },
+      {
+        "mean_pred": -0.1237,
+        "mean_obs": -0.0756,
+        "n": 60
+      },
+      {
+        "mean_pred": -0.0966,
+        "mean_obs": -0.0673,
+        "n": 61
+      },
+      {
+        "mean_pred": -0.0693,
+        "mean_obs": -0.0449,
+        "n": 61
+      },
+      {
+        "mean_pred": -0.0393,
+        "mean_obs": 0.0019,
+        "n": 60
+      },
+      {
+        "mean_pred": -0.0001,
+        "mean_obs": -0.0087,
+        "n": 61
+      },
+      {
+        "mean_pred": 0.0812,
+        "mean_obs": 0.0011,
+        "n": 61
+      }
+    ],
+    "caveat": "Conformal intervals cover the EB-shrunken slope estimate (the analysis target), not the latent true rate. The marginal-coverage guarantee assumes exchangeability, which fails under the future PPMI->PDBP distribution shift; B5 will use weighted/transductive conformal for that external-validation setting."
+  },
+  "binary": {
+    "n": 548,
+    "events": 158,
+    "auc": 0.6348,
+    "brier_raw": 0.1965,
+    "brier_platt": 0.1964,
+    "brier_isotonic": 0.2067,
+    "ece_raw": 0.0699,
+    "ece_platt": 0.0287,
+    "ece_isotonic": 0.0663,
+    "reliability": [
+      {
+        "bin_lo": 0.0,
+        "bin_hi": 0.1,
+        "n": 10,
+        "mean_pred": 0.013,
+        "mean_true": 0.5
+      },
+      {
+        "bin_lo": 0.1,
+        "bin_hi": 0.2,
+        "n": 165,
+        "mean_pred": 0.1684,
+        "mean_true": 0.1697
+      },
+      {
+        "bin_lo": 0.2,
+        "bin_hi": 0.3,
+        "n": 169,
+        "mean_pred": 0.2629,
+        "mean_true": 0.2899
+      },
+      {
+        "bin_lo": 0.3,
+        "bin_hi": 0.4,
+        "n": 82,
+        "mean_pred": 0.3305,
+        "mean_true": 0.3537
+      },
+      {
+        "bin_lo": 0.4,
+        "bin_hi": 0.5,
+        "n": 64,
+        "mean_pred": 0.4433,
+        "mean_true": 0.25
+      },
+      {
+        "bin_lo": 0.5,
+        "bin_hi": 0.6,
+        "n": 37,
+        "mean_pred": 0.5002,
+        "mean_true": 0.5946
+      },
+      {
+        "bin_lo": 0.6,
+        "bin_hi": 0.7,
+        "n": 2,
+        "mean_pred": 0.6424,
+        "mean_true": 0.0
+      },
+      {
+        "bin_lo": 0.8,
+        "bin_hi": 0.9,
+        "n": 16,
+        "mean_pred": 0.8517,
+        "mean_true": 0.5
+      },
+      {
+        "bin_lo": 0.9,
+        "bin_hi": 1.0,
+        "n": 3,
+        "mean_pred": 1.0,
+        "mean_true": 0.3333
+      }
+    ]
+  }
+}

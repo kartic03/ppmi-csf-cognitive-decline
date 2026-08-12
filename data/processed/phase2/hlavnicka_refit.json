@@ -1,0 +1,84 @@
+{
+  "endpoint": "cogstate conversion (baseline-normal PD)",
+  "n_total": 1119,
+  "events_total": 278,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "results": [
+    {
+      "fainting_var": "SCAU13",
+      "n": 1118,
+      "events": 278,
+      "auc": 0.6838028862624187,
+      "lo": 0.6765715998629669,
+      "hi": 0.6865107913669065
+    },
+    {
+      "fainting_var": "SCAU14",
+      "n": 1118,
+      "events": 278,
+      "auc": 0.7305605515587529,
+      "lo": 0.723147910243234,
+      "hi": 0.7346736896197328
+    },
+    {
+      "fainting_var": "SCAU15",
+      "n": 1118,
+      "events": 278,
+      "auc": 0.7406348492634465,
+      "lo": 0.7345216683795821,
+      "hi": 0.7446899623158615
+    },
+    {
+      "fainting_var": "SCAU16",
+      "n": 1118,
+      "events": 278,
+      "auc": 0.6685086930455635,
+      "lo": 0.6616478245974649,
+      "hi": 0.6731136519355944
+    },
+    {
+      "fainting_var": "scopa_cv",
+      "n": 1117,
+      "events": 278,
+      "auc": 0.6801881736565456,
+      "lo": 0.6773844333353342,
+      "hi": 0.6851746254962657
+    },
+    {
+      "fainting_var": "orthostasis",
+      "n": 1118,
+      "events": 278,
+      "auc": 0.6542291880781088,
+      "lo": 0.648661784857828,
+      "hi": 0.6585153305926686
+    },
+    {
+      "fainting_var": "our clinical (10)",
+      "n": 1112,
+      "events": 278,
+      "auc": 0.6670194779428257,
+      "lo": 0.6587435087900901,
+      "hi": 0.6735934993012784
+    },
+    {
+      "fainting_var": "our enriched (14)",
+      "n": 1109,
+      "events": 278,
+      "auc": 0.7163221047710568,
+      "lo": 0.7074556960929451,
+      "hi": 0.7229956107316314
+    }
+  ],
+  "caveat": "their predictors, our cohort, our endpoint; fainting item not verifiable from the PPMI dictionary"
+}

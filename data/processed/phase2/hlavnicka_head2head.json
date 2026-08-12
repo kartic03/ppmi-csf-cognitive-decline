@@ -1,0 +1,115 @@
+{
+  "endpoint": "cogstate conversion, baseline-normal PD",
+  "n": 324,
+  "events": 127,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "csf_block": [
+    "NEFL",
+    "pSNCA_129",
+    "pTau181",
+    "ab_ratio",
+    "ABeta42"
+  ],
+  "fainting_sensitivity": {
+    "SCAU13": {
+      "auc": 0.5820136696110956,
+      "lo": 0.5596946320796194,
+      "hi": 0.6003037691354571
+    },
+    "SCAU14": {
+      "auc": 0.6489687837243696,
+      "lo": 0.623166393540909,
+      "hi": 0.6692113993365043
+    },
+    "SCAU15": {
+      "auc": 0.6272073224349494,
+      "lo": 0.597306047403973,
+      "hi": 0.652823853871058
+    },
+    "SCAU16": {
+      "auc": 0.575742435748831,
+      "lo": 0.5507414365082537,
+      "hi": 0.5975058955194053
+    }
+  },
+  "fainting_spread": 0.07322634797553862,
+  "fainting_best_item": "SCAU14",
+  "arms": {
+    "Hlavnicka-4 (best item)": {
+      "p": 4,
+      "auc": 0.6489687837243696,
+      "lo": 0.623166393540909,
+      "hi": 0.6692113993365043
+    },
+    "  onset age alone": {
+      "p": 1,
+      "auc": 0.5684259962428554,
+      "lo": 0.5563771533634437,
+      "hi": 0.5763219952835845
+    },
+    "  H4 minus onset age": {
+      "p": 3,
+      "auc": 0.6088832487309646,
+      "lo": 0.5772013269914864,
+      "hi": 0.6309404852312243
+    },
+    "CSF alone (paper block)": {
+      "p": 5,
+      "auc": 0.5552580039170231,
+      "lo": 0.5098125424677246,
+      "hi": 0.5944282345417483
+    },
+    "clinical (10)": {
+      "p": 10,
+      "auc": 0.6298692993325072,
+      "lo": 0.6094568128222551,
+      "hi": 0.6503057676166115
+    },
+    "clinical + CSF": {
+      "p": 15,
+      "auc": 0.6272712738318877,
+      "lo": 0.5985051360965666,
+      "hi": 0.6470682281466086
+    },
+    "enriched (14)": {
+      "p": 14,
+      "auc": 0.6761061593189177,
+      "lo": 0.6549422438946402,
+      "hi": 0.6906750869339301
+    },
+    "enriched + CSF": {
+      "p": 19,
+      "auc": 0.6728126623765938,
+      "lo": 0.6511451297014269,
+      "hi": 0.6927135377113393
+    },
+    "enriched + H4": {
+      "p": 17,
+      "auc": 0.6985251209081098,
+      "lo": 0.6790439266157721,
+      "hi": 0.7243295095727247
+    },
+    "enriched + H4 + CSF": {
+      "p": 22,
+      "auc": 0.6969703025700468,
+      "lo": 0.6670130700667493,
+      "hi": 0.7144570126703705
+    }
+  },
+  "caveats": [
+    "their predictors, our cohort, our endpoint -- not a replication",
+    "the fainting item is NOT identifiable from the PPMI data dictionary; the reported H4 arm is the most favourable of four",
+    "brackets are cross-seed ranges, not confidence intervals"
+  ]
+}

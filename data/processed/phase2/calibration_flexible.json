@@ -1,0 +1,53 @@
+{
+  "flexible_mean_abs_deviation": 0.026471809105695628,
+  "overall_slope": 1.0058049035381496,
+  "overall_intercept": -0.0003502811803020174,
+  "age_tertile_calibration": [
+    {
+      "stratum": "age<=58",
+      "n": 203,
+      "slope": 0.2711370062976911,
+      "intercept": -0.006123957586323584,
+      "rmse": 0.2510279793738942
+    },
+    {
+      "stratum": "age 58-67",
+      "n": 202,
+      "slope": 1.0861859066606796,
+      "intercept": 0.022808620415827242,
+      "rmse": 0.3093202787510041
+    },
+    {
+      "stratum": "age>67",
+      "n": 202,
+      "slope": 1.1187009567996302,
+      "intercept": -0.019659504476898054,
+      "rmse": 0.39596268256578593
+    }
+  ],
+  "conformal_halfwidth_marginal": 0.5179561313477187,
+  "conformal_width_marginal": 1.0359122626954373,
+  "mondrian": [
+    {
+      "stratum": "age<=58",
+      "n": 203,
+      "coverage_at_marginal_q": 0.9556650246305419,
+      "mondrian_q": 0.3802585301135707,
+      "mondrian_width": 0.7605170602271414
+    },
+    {
+      "stratum": "age 58-67",
+      "n": 202,
+      "coverage_at_marginal_q": 0.8861386138613861,
+      "mondrian_q": 0.5554565396639793,
+      "mondrian_width": 1.1109130793279587
+    },
+    {
+      "stratum": "age>67",
+      "n": 202,
+      "coverage_at_marginal_q": 0.8663366336633663,
+      "mondrian_q": 0.6767829772677021,
+      "mondrian_width": 1.3535659545354042
+    }
+  ]
+}

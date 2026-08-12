@@ -1,0 +1,59 @@
+{
+  "RQ2b_qalbumin_over_clinical_NfL": {
+    "n": 320,
+    "dr2": 0.0144101239965434,
+    "ci_lo": -0.01986122407307424,
+    "ci_hi": 0.022098791938365708,
+    "excludes_sesoi": false
+  },
+  "riley_clinical (10 predictors)": {
+    "P": 10,
+    "R2": 0.069,
+    "crit1": 1253.683188491907,
+    "crit2": 197.2,
+    "crit3": 244,
+    "required": 1253.683188491907,
+    "have": 607,
+    "adequate": false
+  },
+  "riley_clinical+CSF (15)": {
+    "P": 15,
+    "R2": 0.127,
+    "crit1": 986.091412445136,
+    "crit2": 277.9,
+    "crit3": 249,
+    "required": 986.091412445136,
+    "have": 607,
+    "adequate": false
+  },
+  "riley_enriched clinical (14)": {
+    "P": 14,
+    "R2": 0.211,
+    "crit1": 524.0433085456536,
+    "crit2": 235.92000000000002,
+    "crit3": 248,
+    "required": 524.0433085456536,
+    "have": 607,
+    "adequate": true
+  },
+  "riley_enriched+CSF (19)": {
+    "P": 19,
+    "R2": 0.256,
+    "crit1": 567.6792637826629,
+    "crit2": 302.71999999999997,
+    "crit3": 253,
+    "required": 567.6792637826629,
+    "have": 607,
+    "adequate": true
+  },
+  "archer_full 15-feature model": {
+    "R2": 0.127,
+    "se_target": 0.1530640370773962,
+    "n_required": 293.4027603207324
+  },
+  "archer_B5-available {Abeta42,pTau181}": {
+    "R2": 0.1068,
+    "se_target": 0.1530640370773962,
+    "n_required": 356.96951920973703
+  }
+}

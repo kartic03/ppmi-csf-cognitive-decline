@@ -1,0 +1,87 @@
+[
+  {
+    "protein": "ICAM1",
+    "platform": "decode",
+    "method": "coloc.susie_noCS",
+    "pp4": 0.0,
+    "pp4_estimable": false,
+    "n_signals": 10
+  },
+  {
+    "protein": "MMP2",
+    "platform": "decode",
+    "method": "coloc.susie_noCS",
+    "pp4": 0.0,
+    "pp4_estimable": false,
+    "n_signals": 2
+  },
+  {
+    "protein": "MMP9",
+    "platform": "decode",
+    "method": "coloc.abf",
+    "pp4": 0.01786338951,
+    "pp4_estimable": true,
+    "n_signals": 1,
+    "pp0": 1.397202515e-10,
+    "pp1": 0.769847728,
+    "pp2": 3.853171325e-11,
+    "pp3": 0.2122888823
+  },
+  {
+    "protein": "PDGFRB",
+    "platform": "decode",
+    "method": "coloc.susie_noCS",
+    "pp4": 0.0,
+    "pp4_estimable": false,
+    "n_signals": 5
+  },
+  {
+    "protein": "ICAM1",
+    "platform": "ukbppp",
+    "method": "coloc.susie_noCS",
+    "pp4": 0.0,
+    "pp4_estimable": false,
+    "n_signals": 4
+  },
+  {
+    "protein": "MMP9",
+    "platform": "ukbppp",
+    "method": "coloc.abf",
+    "pp4": 0.007165648778,
+    "pp4_estimable": true,
+    "n_signals": 1,
+    "pp0": 1.34997335e-72,
+    "pp1": 0.7812792912,
+    "pp2": 3.655586032e-73,
+    "pp3": 0.21155506
+  },
+  {
+    "protein": "PDGFRB",
+    "platform": "ukbppp",
+    "method": "coloc.susie_noCS",
+    "pp4": 0.0,
+    "pp4_estimable": false,
+    "n_signals": 5
+  },
+  {
+    "protein": "VCAM1",
+    "platform": "ukbppp",
+    "method": "coloc.susie_noCS",
+    "pp4": 0.0,
+    "pp4_estimable": false,
+    "n_signals": 2
+  },
+  {
+    "protein": "GPNMB",
+    "platform": "decode",
+    "method": "coloc.susie",
+    "pp4": 1.0,
+    "pp4_estimable": true,
+    "n_signals": 2,
+    "pp0": 0.0,
+    "pp1": 0.0,
+    "pp2": 0.0,
+    "pp3": 0.0,
+    "positive_control": true
+  }
+]

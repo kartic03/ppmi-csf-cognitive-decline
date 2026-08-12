@@ -1,0 +1,264 @@
+{
+  "ppmi": {
+    "cohort_n": 1597,
+    "cohort_n_note": "PD subjects with COHORT==1 in curated_cut.parquet",
+    "moca_visit_rule": ">=4 MoCA visits with non-missing age_at_visit AND >=3.0 years age-span between first and last visit (matches existing 05/07 scripts)",
+    "moca_visit_rule_eligible": 805,
+    "analytic_n_slope": {
+      "moca_eligible": 805,
+      "plus_clinical_block": 771,
+      "plus_csf_core_nfl_ptau": 484,
+      "plus_nulisa_bbb_block": 617,
+      "plus_qalbumin": 332,
+      "plus_nulisa_and_qalbumin": 319,
+      "plus_olink_ht_csf": 395,
+      "note": "clinical_block requires age+sex+educ+moca+duration_yrs+LEDD+MIA_PUTAMEN_BILAT non-missing; csf_core requires NfL (biospecimen or serum) + pTau181 both non-missing"
+    },
+    "conversion_events": {
+      "baseline_normal_pd_n": 1119,
+      "cogstate_eq1_at_bl": 1119,
+      "converters_cogstate_ge2": 278,
+      "conversion_rate_pct": 24.8,
+      "converters_among_slope_eligible": 192,
+      "note": "Conversion = cogstate ever reaching >=2 (PD-MCI or PDD) among subjects with cogstate==1 at BL"
+    },
+    "predictor_coverage": {
+      "block1_clinical": {
+        "age": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "age",
+          "n_nonmissing": 1597,
+          "pct_of_pd_bl": 100,
+          "sparse": false
+        },
+        "sex": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "SEX",
+          "n_nonmissing": 1597,
+          "pct_of_pd_bl": 100,
+          "sparse": false
+        },
+        "education_years": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "EDUCYRS",
+          "n_nonmissing": 1596,
+          "pct_of_pd_bl": 100,
+          "sparse": false
+        },
+        "baseline_moca": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "moca",
+          "n_nonmissing": 1592,
+          "pct_of_pd_bl": 100,
+          "sparse": false
+        },
+        "mds_updrs_iii": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "updrs3_score",
+          "n_nonmissing": 1484,
+          "pct_of_pd_bl": 93,
+          "sparse": false
+        },
+        "disease_duration": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "duration_yrs",
+          "n_nonmissing": 1595,
+          "pct_of_pd_bl": 100,
+          "sparse": false
+        },
+        "ledd": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "LEDD",
+          "n_nonmissing": 1597,
+          "pct_of_pd_bl": 100,
+          "sparse": false
+        },
+        "apoe_e4": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "APOE_e4",
+          "n_nonmissing": 1354,
+          "pct_of_pd_bl": 85,
+          "sparse": false,
+          "note": "Encoded 0/1/2 allele count; raw genotype in APOE column (e.g. e3/e4)"
+        },
+        "gba_status": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "subgroup",
+          "n_nonmissing": 1597,
+          "pct_of_pd_bl": 100,
+          "sparse": false,
+          "note": "Categories: Sporadic PD (1080), LRRK2 (184), Normosmic (127), GBA (114), SNCA (38), PRKN (29), LRRK2+GBA (9), others. Binary GBA=1 encodes 'GBA' or 'GBA+*' categories."
+        },
+        "datscan_sbr_putamen": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "MIA_PUTAMEN_BILAT",
+          "n_nonmissing": 1503,
+          "pct_of_pd_bl": 94,
+          "sparse": false,
+          "note": "Among slope-eligible: 772/805 (96%)"
+        }
+      },
+      "block2_csf_neurodegeneration": {
+        "nfl_primary": {
+          "file": "data/raw/PPMI new downloads/Current_Biospecimen_Analysis_Results_22Jun2026.csv",
+          "column": "TESTVALUE where TESTNAME in [NFL, NfL]",
+          "n_nonmissing": 856,
+          "pct_of_pd_bl": 54,
+          "sparse": false,
+          "note": "856 PD subjects at BL from biospecimen file; curated parquet NFL_CSF only 217 (14%) - use biospecimen. NULISA NEFL (904, 57%) is the best single source. Among slope-eligible: NULISA NEFL covers 617 (77%)."
+        },
+        "nfl_curated_csf": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "NFL_CSF",
+          "n_nonmissing": 217,
+          "pct_of_pd_bl": 14,
+          "sparse": true,
+          "flag": "USE_NULISA_NEFL_OR_BIOSPECIMEN_INSTEAD"
+        },
+        "nfl_curated_serum": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "nfl_serum",
+          "n_nonmissing": 595,
+          "pct_of_pd_bl": 37,
+          "sparse": false
+        },
+        "nfl_nulisa_csf": {
+          "file": "data/raw/ALL Proteomic Analysis/converted/PPMI_Project_282_NULISAseq_CNSDiseasePanel_NPQCounts_20260120.csv",
+          "column": "NPQ where Target==NEFL",
+          "n_nonmissing": 904,
+          "pct_of_pd_bl": 57,
+          "sparse": false,
+          "note": "Best NfL source. Coalesce priority: NULISA NEFL > biospecimen BL > nfl_serum"
+        },
+        "ptau181": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "IU_pTau181_CSF",
+          "n_nonmissing": 892,
+          "pct_of_pd_bl": 56,
+          "sparse": false,
+          "note": "Secondary: ptau (573, 36%). Among slope-eligible: IU_pTau181_CSF covers 605 (75%)."
+        },
+        "total_tau": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "tau",
+          "n_nonmissing": 610,
+          "pct_of_pd_bl": 38,
+          "sparse": false
+        },
+        "abeta42": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "IU_ABeta42_CSF",
+          "n_nonmissing": 892,
+          "pct_of_pd_bl": 56,
+          "sparse": false
+        },
+        "abeta40": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "IU_ABeta40_CSF",
+          "n_nonmissing": 892,
+          "pct_of_pd_bl": 56,
+          "sparse": false
+        },
+        "abeta42_40_ratio_computed": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "IU_ABeta42_CSF / IU_ABeta40_CSF (computed)",
+          "n_nonmissing": 892,
+          "pct_of_pd_bl": 56,
+          "sparse": false,
+          "note": "Compute in-pipeline as IU_ABeta42_CSF / IU_ABeta40_CSF. C2N_AB4240 is only 66 subjects (4%) - do NOT use C2N column."
+        },
+        "abeta42_40_ratio_c2n": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "C2N_AB4240",
+          "n_nonmissing": 66,
+          "pct_of_pd_bl": 4,
+          "sparse": true,
+          "flag": "TOO_SPARSE_USE_IU_RATIO_INSTEAD"
+        },
+        "alpha_synuclein": {
+          "file": "data/raw/PPMI new downloads/Current_Biospecimen_Analysis_Results_22Jun2026.csv",
+          "column": "TESTVALUE where TESTNAME=='CSF Alpha-synuclein'",
+          "n_nonmissing": 513,
+          "pct_of_pd_bl": 32,
+          "sparse": true,
+          "flag": "BORDERLINE_SPARSE",
+          "note": "513 subjects at BL. NULISA has Oligo-SNCA and pSNCA-129 species as alternatives (both in 904-subject NULISA subset). Use NULISA pSNCA-129 as primary."
+        },
+        "saa_status": {
+          "file": "data/processed/phase1/curated_cut.parquet",
+          "column": "CSFSAA",
+          "n_nonmissing": 1415,
+          "pct_of_pd_bl": 89,
+          "sparse": false,
+          "note": "Values: 1=positive (1143), 0=negative (244), 2/3=indeterminate (28). Among slope-eligible: 741/805 (92%)."
+        }
+      },
+      "block3_bbb": {
+        "q_albumin": {
+          "file": "data/processed/phase1/qalbumin.csv",
+          "column": "qalb",
+          "n_nonmissing": 373,
+          "pct_of_pd_bl": 23,
+          "sparse": true,
+          "flag": "SPARSE_BUT_USABLE_IN_BBB_SUBGROUP",
+          "note": "Derived from Current_Biospecimen_Analysis_Results_22Jun2026.csv (CSF Albumin + Plasma Albumin paired, N=373 PD). 332/805 slope-eligible (41%). Use as Block 3 subgroup only; B3 test must be restricted to these 319-332 subjects."
+        },
+        "pdgfrb_csf_nulisa": {
+          "file": "data/raw/ALL Proteomic Analysis/converted/PPMI_Project_282_NULISAseq_CNSDiseasePanel_NPQCounts_20260120.csv",
+          "column": "NPQ where Target==PDGFRB",
+          "n_nonmissing": 904,
+          "pct_of_pd_bl": 57,
+          "sparse": false,
+          "note": "Among slope-eligible: 617 (77%)"
+        },
+        "icam1_csf_nulisa": {
+          "file": "data/raw/ALL Proteomic Analysis/converted/PPMI_Project_282_NULISAseq_CNSDiseasePanel_NPQCounts_20260120.csv",
+          "column": "NPQ where Target==ICAM1",
+          "n_nonmissing": 904,
+          "pct_of_pd_bl": 57,
+          "sparse": false
+        },
+        "vcam1_csf_nulisa": {
+          "file": "data/raw/ALL Proteomic Analysis/converted/PPMI_Project_282_NULISAseq_CNSDiseasePanel_NPQCounts_20260120.csv",
+          "column": "NPQ where Target==VCAM1",
+          "n_nonmissing": 904,
+          "pct_of_pd_bl": 57,
+          "sparse": false
+        },
+        "vegfa_csf_nulisa": {
+          "file": "data/raw/ALL Proteomic Analysis/converted/PPMI_Project_282_NULISAseq_CNSDiseasePanel_NPQCounts_20260120.csv",
+          "column": "NPQ where Target==VEGFA",
+          "n_nonmissing": 904,
+          "pct_of_pd_bl": 57,
+          "sparse": false
+        }
+      },
+      "block4_high_dim_proteomics": {
+        "nulisa_cns_132plex": {
+          "file": "data/raw/ALL Proteomic Analysis/converted/PPMI_Project_282_NULISAseq_CNSDiseasePanel_NPQCounts_20260120.csv",
+          "column": "NPQ (131 targets measured)",
+          "n_nonmissing": 904,
+          "pct_of_pd_bl": 57,
+          "sparse": false,
+          "note": "131 targets actually measured (1 of 132 panel not passing QC). Among slope-eligible: 617."
+        },
+        "olink_explore_ht_csf": {
+          "file": "data/raw/ALL Proteomic Analysis/unzipped/ppmi_proj314_csf_screened_extended_npx_20260116.parquet",
+          "column": "NPX (Assay column; 5440 assays, long format)",
+          "n_nonmissing_pd": 782,
+          "n_at_bl": 701,
+          "pct_of_pd_bl": 44,
+          "sparse": false,
+          "note": "Project 314 (primary); Project 277 also available at same path. Among slope-eligible: 395 (49%). Long format: filter SampleType==SAMPLE, SampleQC==PASS."
+        }
+      }
+    }
+  },
+  "external": "pending_tier2",
+  "external_note": "AMP-PD Tier-2 DUA not yet signed. PDBP data inaccessible. No PDBP data was inspected.",
+  "external_fallback": "PPMI internal splits: (A) temporal split by enroll_phase - Phase 1 (enrolled 2010-2020, n=719 BL PD) trains, Phase 2 (enrolled 2020-2026, n=878 BL PD) validates; or (B) geographic/site split across 55 PPMI sites (largest site n=143 BL PD). Temporal split preferred as it avoids site-imbalance confounds and approximates prospective validation. B5 pre-commits to using Phase 2 as holdout only AFTER the modeling code is locked.",
+  "min_events_gate": 150,
+  "min_events_gate_note": "For the binary conversion endpoint (PD-MCI/PDD), require >=150 events in the validation set to yield interpretable calibration-slope 95% CI. Current PPMI Phase 2 temporal holdout yields ~278 * (878/1597) ~ 152 projected converters before predictor-coverage filtering - borderline. If Tier-2 PDBP lands with >=150 conversion events, use PDBP as primary external validator; otherwise use PPMI temporal split as specified above.",
+  "generated": "2026-06-29",
+  "task": "B0"
+}

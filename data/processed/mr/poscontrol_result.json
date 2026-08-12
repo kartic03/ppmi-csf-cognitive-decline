@@ -1,0 +1,26 @@
+{
+  "exposure": "GPNMB",
+  "platform": "decode",
+  "or": 1.491785,
+  "ci_low": 1.288809,
+  "ci_high": 1.726729,
+  "recovers_expected_direction": true,
+  "recovers_both_platforms": false,
+  "gate_applied": "decode_only",
+  "gate_prespecified": "both_platforms",
+  "gate_deviation": "DESIGN_SPEC_v3_npjPD.md:150 and IMPLEMENTATION_PLAN_npjPD.md:23 require positive-control recovery on BOTH platforms before any BBB null is reported. GPNMB recovers on deCODE but not on UKB-PPP, so the pre-specified gate is NOT met; the gate was narrowed to deCODE. Consequence: the UKB-PPP arm of the PDGFRB null is ungated.",
+  "platforms": {
+    "decode": {
+      "n_instruments": 2,
+      "or": 1.491785,
+      "ci_low": 1.288809,
+      "ci_high": 1.726729
+    },
+    "ukbppp": {
+      "n_instruments": 4,
+      "or": 0.994015,
+      "ci_low": 0.896358,
+      "ci_high": 1.102312
+    }
+  }
+}

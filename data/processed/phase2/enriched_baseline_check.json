@@ -1,0 +1,93 @@
+{
+  "_SUPERSEDED": {
+    "status": "DO NOT USE \u2014 superseded 2026-08-05",
+    "use_instead": "data/processed/phase2/estimand_audit.json",
+    "reason": "This file's control arm (results[eb_slope|thin].dr2 = 0.05079575757612287) equals increment.json rq1_csf.perm_observed_dr2_fixed EXACTLY (delta 0.0), i.e. the FIXED-ALPHA PERMUTATION estimator \u2014 not the tuned nested-CV estimator this file's own cv_config declares. The whole file is therefore on the wrong estimator under a correct-looking label. Not seed noise.",
+    "consequence": "Its enriched values (r2_base 0.21316584, dr2 0.04265809) are fixed-alpha numbers. The tuned values used in the manuscript are r2_base 0.21064665 and dr2 0.04560219, from estimand_audit.json, whose control arm reproduces the committed increment.json headline to the last digit.",
+    "evidence": "revision/figures/ARTIFACT_INTEGRITY_SWEEP.md",
+    "retained_why": "Kept rather than deleted so the mislabelling remains auditable. Nothing in src/ reads this file; only the integrity sweep and the diff check do."
+  },
+  "cv_config": {
+    "n_outer": 5,
+    "n_inner": 5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "n": 607,
+  "thin_cols": [
+    "age",
+    "SEX",
+    "EDUCYRS",
+    "moca",
+    "updrs3_score",
+    "duration_yrs",
+    "LEDD",
+    "APOE_e4",
+    "gba_status",
+    "MIA_PUTAMEN_BILAT"
+  ],
+  "enriched_cols": [
+    "age",
+    "SEX",
+    "EDUCYRS",
+    "moca",
+    "updrs3_score",
+    "duration_yrs",
+    "LEDD",
+    "APOE_e4",
+    "gba_status",
+    "MIA_CAUDATE_BILAT",
+    "COG_COMPOSITE_INT",
+    "gds",
+    "stai",
+    "rem"
+  ],
+  "results": [
+    {
+      "outcome": "eb_slope",
+      "baseline": "thin",
+      "r2_base": 0.07022738336865275,
+      "r2_aug": 0.12102314094477562,
+      "dr2": 0.05079575757612287,
+      "lo": 0.036769229165034,
+      "hi": 0.05691036241602876
+    },
+    {
+      "outcome": "eb_slope",
+      "baseline": "enriched",
+      "r2_base": 0.21316583873060846,
+      "r2_aug": 0.2558239331195332,
+      "dr2": 0.04265809438892476,
+      "lo": 0.03125461282735931,
+      "hi": 0.05353366247754354
+    },
+    {
+      "outcome": "slope_excl_baseline",
+      "baseline": "thin",
+      "r2_base": 0.02685013525423785,
+      "r2_aug": 0.04590801303698955,
+      "dr2": 0.019057877782751698,
+      "lo": 0.002003312188688211,
+      "hi": 0.03418326437015318
+    },
+    {
+      "outcome": "slope_excl_baseline",
+      "baseline": "enriched",
+      "r2_base": 0.04304670686616063,
+      "r2_aug": 0.05381680035291214,
+      "dr2": 0.010770093486751509,
+      "lo": 0.0011718172763242052,
+      "hi": 0.03131566146928155
+    }
+  ]
+}

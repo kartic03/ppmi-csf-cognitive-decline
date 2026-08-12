@@ -1,0 +1,289 @@
+{
+  "source": "Ensembl VEP REST",
+  "exposure": "GPNMB (positive control)",
+  "n_instruments": 8,
+  "n_annotated": 8,
+  "n_coding_decode": 0,
+  "n_coding_ukbppp": 0,
+  "verdict": "no_coding_variants_on_either_platform",
+  "context": {
+    "decode_or": 1.491785,
+    "decode_ci": [
+      1.288809,
+      1.726729
+    ],
+    "ukbppp_or": 0.994015,
+    "ukbppp_ci": [
+      0.896358,
+      1.102312
+    ],
+    "note": "deCODE recovers, UKB-PPP does not; UKB-PPP is not instrument-poor (5 vs 3)"
+  },
+  "limitation": "lead clumped variants only, not high-LD proxies; a null bounds the artifact hypothesis, it does not refute it",
+  "variants": [
+    {
+      "protein": "GPNMB",
+      "platform": "decode",
+      "rsid": "rs77056309",
+      "pos": 22794483,
+      "F": 53.32651432977461,
+      "palindromic": true,
+      "most_severe": "intergenic_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "decode",
+      "rsid": "rs10250602",
+      "pos": 23264082,
+      "F": 714.7140764044624,
+      "palindromic": false,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "upstream_gene_variant"
+      ],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "decode",
+      "rsid": "rs79914289",
+      "pos": 23341769,
+      "F": 167.56177032154167,
+      "palindromic": false,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "ukbppp",
+      "rsid": "rs191297708",
+      "pos": 23217214,
+      "F": 845.8141374574855,
+      "palindromic": false,
+      "most_severe": "downstream_gene_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "downstream_gene_variant"
+      ],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "ukbppp",
+      "rsid": "rs142078176",
+      "pos": 23244033,
+      "F": 121.9165973827959,
+      "palindromic": false,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "ukbppp",
+      "rsid": "rs117207752",
+      "pos": 23247652,
+      "F": 245.72547326721156,
+      "palindromic": false,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "ukbppp",
+      "rsid": "rs17740440",
+      "pos": 23315622,
+      "F": 117.7900165074528,
+      "palindromic": false,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "downstream_gene_variant",
+        "intron_variant",
+        "non_coding_transcript_variant"
+      ],
+      "vep_ok": true
+    },
+    {
+      "protein": "GPNMB",
+      "platform": "ukbppp",
+      "rsid": "rs78840640",
+      "pos": 23394987,
+      "F": 1404.9800143974055,
+      "palindromic": true,
+      "most_severe": "intron_variant",
+      "coding": false,
+      "protein_change": null,
+      "consequences": [
+        "NMD_transcript_variant",
+        "intron_variant",
+        "non_coding_transcript_variant",
+        "upstream_gene_variant"
+      ],
+      "vep_ok": true
+    }
+  ],
+  "cross_platform_ld": {
+    "ld_reference": "1000 Genomes EUR (N=503) \u2014 the same weak panel already disclosed as the likely cause of the SuSiE credible-set failures; these r2 values are correspondingly imprecise",
+    "shared_rsids_between_platforms": 0,
+    "n_cross_platform_pairs": 15,
+    "max_cross_platform_r2": 0.704813,
+    "n_pairs_r2_above_0.2": 1,
+    "strongest_instrument_per_platform": {
+      "decode": {
+        "rsid": "rs10250602",
+        "F": 714.7140764044624,
+        "max_cross_platform_r2": 0.073907
+      },
+      "ukbppp": {
+        "rsid": "rs78840640",
+        "F": 1404.9800143974055,
+        "max_cross_platform_r2": 0.0107511
+      }
+    },
+    "cross_platform_pairs": [
+      {
+        "snp_a": "rs191297708",
+        "platform_a": "ukbppp",
+        "snp_b": "rs79914289",
+        "platform_b": "decode",
+        "r2": 0.704813
+      },
+      {
+        "snp_a": "rs10250602",
+        "platform_a": "decode",
+        "snp_b": "rs17740440",
+        "platform_b": "ukbppp",
+        "r2": 0.073907
+      },
+      {
+        "snp_a": "rs142078176",
+        "platform_a": "ukbppp",
+        "snp_b": "rs10250602",
+        "platform_b": "decode",
+        "r2": 0.0330896
+      },
+      {
+        "snp_a": "rs117207752",
+        "platform_a": "ukbppp",
+        "snp_b": "rs10250602",
+        "platform_b": "decode",
+        "r2": 0.0244784
+      },
+      {
+        "snp_a": "rs77056309",
+        "platform_a": "decode",
+        "snp_b": "rs17740440",
+        "platform_b": "ukbppp",
+        "r2": 0.0139719
+      },
+      {
+        "snp_a": "rs191297708",
+        "platform_a": "ukbppp",
+        "snp_b": "rs10250602",
+        "platform_b": "decode",
+        "r2": 0.0120228
+      },
+      {
+        "snp_a": "rs10250602",
+        "platform_a": "decode",
+        "snp_b": "rs78840640",
+        "platform_b": "ukbppp",
+        "r2": 0.0107511
+      },
+      {
+        "snp_a": "rs77056309",
+        "platform_a": "decode",
+        "snp_b": "rs142078176",
+        "platform_b": "ukbppp",
+        "r2": 0.00377837
+      },
+      {
+        "snp_a": "rs77056309",
+        "platform_a": "decode",
+        "snp_b": "rs191297708",
+        "platform_b": "ukbppp",
+        "r2": 0.00362319
+      },
+      {
+        "snp_a": "rs77056309",
+        "platform_a": "decode",
+        "snp_b": "rs78840640",
+        "platform_b": "ukbppp",
+        "r2": 0.0035484
+      },
+      {
+        "snp_a": "rs17740440",
+        "platform_a": "ukbppp",
+        "snp_b": "rs79914289",
+        "platform_b": "decode",
+        "r2": 0.00292746
+      },
+      {
+        "snp_a": "rs79914289",
+        "platform_a": "decode",
+        "snp_b": "rs78840640",
+        "platform_b": "ukbppp",
+        "r2": 0.00221409
+      },
+      {
+        "snp_a": "rs77056309",
+        "platform_a": "decode",
+        "snp_b": "rs117207752",
+        "platform_b": "ukbppp",
+        "r2": 0.00115751
+      },
+      {
+        "snp_a": "rs117207752",
+        "platform_a": "ukbppp",
+        "snp_b": "rs79914289",
+        "platform_b": "decode",
+        "r2": 0.00112722
+      },
+      {
+        "snp_a": "rs142078176",
+        "platform_a": "ukbppp",
+        "snp_b": "rs79914289",
+        "platform_b": "decode",
+        "r2": 2.9944e-05
+      }
+    ],
+    "reading": "The instrument sets share no rsID. Exactly one cross-platform pair is in strong LD (rs191297708 UKB / rs79914289 deCODE, r2=0.705); all other 14 pairs are below r2=0.08. Critically, the STRONGEST instrument on each platform is nearly independent of everything on the other (deCODE rs10250602 F=715, max cross r2=0.074; UKB rs78840640 F=1405, max cross r2=0.011). So the two platforms' MR estimates are largely NOT instrumented by the same genetic variation. This is a concrete explanation for the discordance and does not require an epitope difference \u2014 but it is an observation about instrument selection, not proof, and it does NOT restore the pre-registered both-platform gate."
+  },
+  "verdict_combined": "Epitope/binding artifact NOT supported (0/8 instruments coding on either platform). The likelier explanation is that the platforms instrument different variation: no shared rsID, and each platform's strongest instrument is nearly independent of the other's. The UKB-PPP arm of the PDGFRB null REMAINS UNGATED and must stay disclosed."
+}

@@ -1,0 +1,118 @@
+{
+  "gpnmb_positive_control_or": 1.491785,
+  "cells": [
+    {
+      "protein": "ICAM1",
+      "platform": "decode",
+      "n_instruments": 8,
+      "F": 1198.68,
+      "or": 0.988426,
+      "ci_low": 0.93686,
+      "ci_high": 1.042829,
+      "se_log_or": 0.027336888383156205,
+      "mde_or_80pct": 1.0795957034615342,
+      "excludes_gpnmb_scale": "YES",
+      "verdict": "null"
+    },
+    {
+      "protein": "ICAM1",
+      "platform": "ukbppp",
+      "n_instruments": 2,
+      "F": 744.29,
+      "or": 1.175851,
+      "ci_low": 1.046303,
+      "ci_high": 1.321438,
+      "se_log_or": 0.05955658899167084,
+      "mde_or_80pct": 1.1815803940218692,
+      "excludes_gpnmb_scale": "YES",
+      "verdict": "positive"
+    },
+    {
+      "protein": "MMP2",
+      "platform": "decode",
+      "n_instruments": 2,
+      "F": 87.4,
+      "or": 0.787086,
+      "ci_low": 0.517701,
+      "ci_high": 1.196645,
+      "se_log_or": 0.2137486295368651,
+      "mde_or_80pct": 1.8199972696629498,
+      "excludes_gpnmb_scale": "no",
+      "verdict": "inconclusive"
+    },
+    {
+      "protein": "MMP9",
+      "platform": "decode",
+      "n_instruments": 1,
+      "F": 68.82,
+      "or": 0.895606,
+      "ci_low": 0.559454,
+      "ci_high": 1.433737,
+      "se_log_or": 0.24007540459580276,
+      "mde_or_80pct": 1.9593086956934629,
+      "excludes_gpnmb_scale": "no",
+      "verdict": "inconclusive"
+    },
+    {
+      "protein": "MMP9",
+      "platform": "ukbppp",
+      "n_instruments": 1,
+      "F": 354.19,
+      "or": 0.959497,
+      "ci_low": 0.75752,
+      "ci_high": 1.215328,
+      "se_log_or": 0.12059388392938789,
+      "mde_or_80pct": 1.401935865573564,
+      "excludes_gpnmb_scale": "YES",
+      "verdict": "inconclusive"
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "decode",
+      "n_instruments": 5,
+      "F": 13778.65,
+      "or": 0.992242,
+      "ci_low": 0.961231,
+      "ci_high": 1.024254,
+      "se_log_or": 0.01620056988855585,
+      "mde_or_80pct": 1.046433041024371,
+      "excludes_gpnmb_scale": "YES",
+      "verdict": "null"
+    },
+    {
+      "protein": "PDGFRB",
+      "platform": "ukbppp",
+      "n_instruments": 4,
+      "F": 2252.45,
+      "or": 0.972713,
+      "ci_low": 0.921528,
+      "ci_high": 1.026742,
+      "se_log_or": 0.02758030254484886,
+      "mde_or_80pct": 1.0803321800018781,
+      "excludes_gpnmb_scale": "YES",
+      "verdict": "null"
+    },
+    {
+      "protein": "VCAM1",
+      "platform": "ukbppp",
+      "n_instruments": 1,
+      "F": 49.33,
+      "or": 4.541083,
+      "ci_low": 1.756007,
+      "ci_high": 11.743365,
+      "se_log_or": 0.48476551959581193,
+      "mde_or_80pct": 3.8888438939164085,
+      "excludes_gpnmb_scale": "no",
+      "verdict": "positive"
+    }
+  ],
+  "pdgfrb_decode_single_snp": {
+    "rsid": "rs2304058",
+    "weight_frac": 0.9352838278278275,
+    "or": 0.9999154012098131,
+    "ci_low": 0.9676187818476412,
+    "ci_high": 1.0332899984304071,
+    "mde_or_80pct": 1.0480487559969873
+  },
+  "note": "bounds derived from observed estimate precision, not from assumed R2/N; MDE = exp((z0.975+z0.80)*SE)"
+}

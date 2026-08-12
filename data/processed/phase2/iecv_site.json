@@ -1,0 +1,195 @@
+{
+  "design": "leave-one-site-out IECV on the CSF-complete set; EB params refit on training sites only; alpha tuned in-fold",
+  "min_cluster_n_for_metrics": 20,
+  "site": {
+    "label": "leave-one-site-out",
+    "n_pooled": 607,
+    "n_clusters_held_out": 11,
+    "n_clusters_scored": 11,
+    "pooled_r2_base": 0.03508895637267673,
+    "pooled_r2_aug": 0.0791058331799992,
+    "per_cluster": [
+      {
+        "cluster": "-1.0",
+        "n": 289,
+        "r2_base": -0.003292956474397979,
+        "r2_aug": 0.04811343085511499,
+        "calib_slope": 0.7413772160913433,
+        "calib_slope_se": 0.1742381401111534
+      },
+      {
+        "cluster": "14.0",
+        "n": 24,
+        "r2_base": 0.05653878696243919,
+        "r2_aug": 0.1984665550730237,
+        "calib_slope": 1.2606085696412042,
+        "calib_slope_se": 0.38434842979428907
+      },
+      {
+        "cluster": "19.0",
+        "n": 34,
+        "r2_base": 0.1470329108519257,
+        "r2_aug": 0.17392404833058328,
+        "calib_slope": 0.9479330582137417,
+        "calib_slope_se": 0.3604350422514351
+      },
+      {
+        "cluster": "24.0",
+        "n": 30,
+        "r2_base": 0.23147315641550503,
+        "r2_aug": 0.22695909918508494,
+        "calib_slope": 0.9986481594368928,
+        "calib_slope_se": 0.3478960539393126
+      },
+      {
+        "cluster": "26.0",
+        "n": 75,
+        "r2_base": 0.006992677004559966,
+        "r2_aug": -0.00967189199951668,
+        "calib_slope": 0.49902775908653846,
+        "calib_slope_se": 0.27028362116184895
+      },
+      {
+        "cluster": "31.0",
+        "n": 27,
+        "r2_base": -0.028200311845430148,
+        "r2_aug": -0.1048986560280385,
+        "calib_slope": 0.3934962358462153,
+        "calib_slope_se": 0.33929053703893647
+      },
+      {
+        "cluster": "33.0",
+        "n": 26,
+        "r2_base": 0.11091365283774013,
+        "r2_aug": 0.10598829774411611,
+        "calib_slope": 1.0382359824250649,
+        "calib_slope_se": 0.6063399844299434
+      },
+      {
+        "cluster": "37.0",
+        "n": 24,
+        "r2_base": -0.3962978797117329,
+        "r2_aug": -0.5693047256648869,
+        "calib_slope": 0.46744604210337465,
+        "calib_slope_se": 0.3448532743988614
+      },
+      {
+        "cluster": "61.0",
+        "n": 27,
+        "r2_base": 0.01332308625675016,
+        "r2_aug": 0.07810630895473347,
+        "calib_slope": 1.782033383409885,
+        "calib_slope_se": 0.9240724469251271
+      },
+      {
+        "cluster": "62.0",
+        "n": 27,
+        "r2_base": 0.20438749720668492,
+        "r2_aug": 0.26601909162532034,
+        "calib_slope": 1.1558356511918164,
+        "calib_slope_se": 0.3577118802540579
+      },
+      {
+        "cluster": "67.0",
+        "n": 24,
+        "r2_base": -0.5257131132326358,
+        "r2_aug": -0.2275982806580168,
+        "calib_slope": 0.40813567282034835,
+        "calib_slope_se": 0.48886089607278066
+      }
+    ],
+    "pooled_dr2": 0.04401687680732247,
+    "calibration_meta": {
+      "estimate": 0.765398861628164,
+      "se": 0.09884868698895333,
+      "ci_lo": 0.5716554351298154,
+      "ci_hi": 0.9591422881265125,
+      "tau2": 0.0,
+      "I2_percent": 0.0,
+      "k": 11,
+      "pi_lo": 0.5417875963173804,
+      "pi_hi": 0.9890101269389475
+    },
+    "calibration_meta_real_sites_only": {
+      "estimate": 0.7767996063046099,
+      "se": 0.12003515546560942,
+      "ci_lo": 0.5415307015920154,
+      "ci_hi": 1.0120685110172043,
+      "tau2": 0.0,
+      "I2_percent": 0.0,
+      "k": 10,
+      "pi_lo": 0.49999804143103965,
+      "pi_hi": 1.05360117117818
+    },
+    "calibration_meta_note": "PRIMARY = calibration_meta_real_sites_only (k=10). The pooled small-site cluster '-1.0' is 38 sites glued together, not a site; at n=289 it has the smallest SE and would dominate the pooling. I^2 is underpowered at these cluster sizes and must not be read as evidence of homogeneity."
+  },
+  "random_control": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      {
+        "label": "random-clusters-seed0",
+        "n_pooled": 607,
+        "n_clusters_held_out": 11,
+        "n_clusters_scored": 11,
+        "pooled_r2_base": 0.06324875857324086,
+        "pooled_r2_aug": 0.12021162947500885,
+        "pooled_dr2": 0.05696287090176799
+      },
+      {
+        "label": "random-clusters-seed1",
+        "n_pooled": 607,
+        "n_clusters_held_out": 11,
+        "n_clusters_scored": 11,
+        "pooled_r2_base": 0.07503002184712448,
+        "pooled_r2_aug": 0.12714631483922045,
+        "pooled_dr2": 0.05211629299209597
+      },
+      {
+        "label": "random-clusters-seed2",
+        "n_pooled": 607,
+        "n_clusters_held_out": 11,
+        "n_clusters_scored": 11,
+        "pooled_r2_base": 0.06482538517920522,
+        "pooled_r2_aug": 0.11554253186027985,
+        "pooled_dr2": 0.05071714668107463
+      },
+      {
+        "label": "random-clusters-seed3",
+        "n_pooled": 607,
+        "n_clusters_held_out": 11,
+        "n_clusters_scored": 11,
+        "pooled_r2_base": 0.055697051015405896,
+        "pooled_r2_aug": 0.10629359046954179,
+        "pooled_dr2": 0.05059653945413589
+      },
+      {
+        "label": "random-clusters-seed4",
+        "n_pooled": 607,
+        "n_clusters_held_out": 11,
+        "n_clusters_scored": 11,
+        "pooled_r2_base": 0.0538964833537372,
+        "pooled_r2_aug": 0.10602564386053182,
+        "pooled_dr2": 0.052129160506794614
+      }
+    ],
+    "mean_r2_base": 0.06253953999374273,
+    "mean_r2_aug": 0.11504394210091655,
+    "mean_dr2": 0.05250440210717382
+  },
+  "reference_random_5fold": {
+    "r2_base": 0.0692,
+    "r2_aug": 0.1273,
+    "dr2": 0.0581
+  },
+  "caveats": [
+    "per-site R2 is noisy at these cluster sizes; the pooled figure and the random-effects prediction interval are the reportable numbers",
+    "IECV is not a substitute for external validation in an independent cohort; it shares PPMI's protocol, era and inclusion criteria",
+    "the pooled small-site cluster is retained in the POOLED R2 (so no subject is dropped) but excluded from the primary calibration meta-analysis"
+  ]
+}

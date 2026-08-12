@@ -1,0 +1,26 @@
+{
+  "n": 607,
+  "B_requested": 200,
+  "B_usable": 200,
+  "cv": {
+    "n_outer": 5,
+    "n_inner": 5,
+    "seeds": [
+      0
+    ]
+  },
+  "point_dr2": 0.058132859125052505,
+  "boot_mean": 0.05341766347571971,
+  "ci_lo": 0.012022764454988831,
+  "ci_hi": 0.09228093442713563,
+  "base_ci": [
+    -0.0019315337463715716,
+    0.1081822003461147
+  ],
+  "aug_ci": [
+    0.04604337072893312,
+    0.17672249550354907
+  ],
+  "instability_median": 0.16340704545104345,
+  "note": "percentile bootstrap over SUBJECTS; no unbiased estimator of K-fold CV variance exists, so reported without coverage guarantee"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "stratum":"few_visit",
+    "n":462,
+    "enrol_offset_yrs":8.0137899974,
+    "yrs_from_cohort_end":3.2562349811,
+    "span_years":4.5600545573,
+    "mean_ols_slope":-0.1659458606
+  },
+  {
+    "stratum":"many_visit",
+    "n":354,
+    "enrol_offset_yrs":2.7568069235,
+    "yrs_from_cohort_end":2.1142240629,
+    "span_years":10.9586100147,
+    "mean_ols_slope":-0.1392730937
+  }
+]

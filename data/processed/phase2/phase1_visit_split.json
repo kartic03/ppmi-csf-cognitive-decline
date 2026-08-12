@@ -1,0 +1,180 @@
+{
+  "design": "full-sample paired increment; strata applied AFTER the fact by partitioning out-of-fold predictions (models fit once on everyone). Retraining within strata was tried previously and produced negative R2 at n=263.",
+  "cv_config": {
+    "n_outer": 5,
+    "n_inner": 5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "results": {
+    "eb_slope_gap_all": 0.07032757022571068,
+    "eb_slope_gap_phase1": 0.11259798437877577,
+    "eb_slope_gap_fraction_surviving": 1.6010503991166138,
+    "eb_slope": {
+      "full_sample": {
+        "r2_base": 0.06921477353696548,
+        "r2_aug": 0.12734763266201798,
+        "dr2": 0.058132859125052505
+      },
+      "n_full": 607,
+      "visit_median": 8.0,
+      "cells": [
+        {
+          "cell": "few-visit (all phases)",
+          "n": 344,
+          "r2_base": 0.07258236462881162,
+          "r2_aug": 0.14961526067599407,
+          "dr2": 0.07703289604718244,
+          "rmse_base": 0.37979017741734805,
+          "rmse_aug": 0.3636752803230384,
+          "rmse_gain": 0.016114897094309633,
+          "rmse_gain_pct_of_sd": 4.080273943814245,
+          "outcome_sd": 0.39494645007206086
+        },
+        {
+          "cell": "many-visit (all phases)",
+          "n": 263,
+          "r2_base": 0.0353164049667426,
+          "r2_aug": 0.04202173078821436,
+          "dr2": 0.006705325821471764,
+          "rmse_base": 0.2646525859602788,
+          "rmse_aug": 0.2637312080682881,
+          "rmse_gain": 0.0009213778919907045,
+          "rmse_gain_pct_of_sd": 0.3412925933738236,
+          "outcome_sd": 0.26996715131801985
+        },
+        {
+          "cell": "phase 1, few-visit",
+          "n": 219,
+          "r2_base": 0.02221948337361257,
+          "r2_aug": 0.1415227935738601,
+          "dr2": 0.11930331020024754,
+          "rmse_base": 0.40194859120511583,
+          "rmse_aug": 0.3766293888615958,
+          "rmse_gain": 0.02531920234352003,
+          "rmse_gain_pct_of_sd": 6.21450279517553,
+          "outcome_sd": 0.40742120774611196
+        },
+        {
+          "cell": "phase 1, many-visit",
+          "n": 263,
+          "r2_base": 0.0353164049667426,
+          "r2_aug": 0.04202173078821436,
+          "dr2": 0.006705325821471764,
+          "rmse_base": 0.2646525859602788,
+          "rmse_aug": 0.2637312080682881,
+          "rmse_gain": 0.0009213778919907045,
+          "rmse_gain_pct_of_sd": 0.3412925933738236,
+          "outcome_sd": 0.26996715131801985
+        },
+        {
+          "cell": "phase 2, few-visit",
+          "n": 125,
+          "r2_base": -0.11560188973893637,
+          "r2_aug": -0.13093904729751826,
+          "dr2": -0.015337157558581893,
+          "rmse_base": 0.3374792960162127,
+          "rmse_aug": 0.3397911891597334,
+          "rmse_gain": -0.0023118931435207046,
+          "rmse_gain_pct_of_sd": -0.7206610982295472,
+          "outcome_sd": 0.32080171237220206
+        },
+        {
+          "cell": "phase 2, many-visit",
+          "n": 0,
+          "note": "too small to score"
+        }
+      ]
+    },
+    "ols_slope_gap_all": 0.08954228962352095,
+    "ols_slope_gap_phase1": 0.1294932829540103,
+    "ols_slope_gap_fraction_surviving": 1.4461689945439482,
+    "ols_slope": {
+      "full_sample": {
+        "r2_base": 0.058642927815101276,
+        "r2_aug": 0.1211071222267378,
+        "dr2": 0.06246419441163653
+      },
+      "n_full": 607,
+      "visit_median": 8.0,
+      "cells": [
+        {
+          "cell": "few-visit (all phases)",
+          "n": 344,
+          "r2_base": 0.05985600149110837,
+          "r2_aug": 0.13298541404754827,
+          "dr2": 0.0731294125564399,
+          "rmse_base": 0.7426031067184438,
+          "rmse_aug": 0.7131366796757589,
+          "rmse_gain": 0.029466427042684873,
+          "rmse_gain_pct_of_sd": 3.841808778305841,
+          "outcome_sd": 0.7669935892977725
+        },
+        {
+          "cell": "many-visit (all phases)",
+          "n": 263,
+          "r2_base": -0.016277158456917018,
+          "r2_aug": -0.03269003552399807,
+          "dr2": -0.016412877067081055,
+          "rmse_base": 0.3161092025866949,
+          "rmse_aug": 0.31865156088703717,
+          "rmse_gain": -0.0025423583003422734,
+          "rmse_gain_pct_of_sd": -0.8092421050700405,
+          "outcome_sd": 0.3141653510629221
+        },
+        {
+          "cell": "phase 1, few-visit",
+          "n": 219,
+          "r2_base": 0.013304111326260526,
+          "r2_aug": 0.12638451721318977,
+          "dr2": 0.11308040588692925,
+          "rmse_base": 0.7885665614485147,
+          "rmse_aug": 0.7420050465817013,
+          "rmse_gain": 0.04656151486681337,
+          "rmse_gain_pct_of_sd": 5.851761172775796,
+          "outcome_sd": 0.7956837863348207
+        },
+        {
+          "cell": "phase 1, many-visit",
+          "n": 263,
+          "r2_base": -0.016277158456917018,
+          "r2_aug": -0.03269003552399807,
+          "dr2": -0.016412877067081055,
+          "rmse_base": 0.3161092025866949,
+          "rmse_aug": 0.31865156088703717,
+          "rmse_gain": -0.0025423583003422734,
+          "rmse_gain_pct_of_sd": -0.8092421050700405,
+          "outcome_sd": 0.3141653510629221
+        },
+        {
+          "cell": "phase 2, few-visit",
+          "n": 125,
+          "r2_base": -0.1628328126555949,
+          "r2_aug": -0.18132615164879073,
+          "dr2": -0.01849333899319583,
+          "rmse_base": 0.6543373632083406,
+          "rmse_aug": 0.6595200296991756,
+          "rmse_gain": -0.005182666490834986,
+          "rmse_gain_pct_of_sd": -0.8506795997586888,
+          "outcome_sd": 0.6092383656908131
+        },
+        {
+          "cell": "phase 2, many-visit",
+          "n": 0,
+          "note": "too small to score"
+        }
+      ]
+    }
+  },
+  "caveat": "cells are scored on shared out-of-fold predictions, so their R2 values are not independent estimates and have no CIs here"
+}

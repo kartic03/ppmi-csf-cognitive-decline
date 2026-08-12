@@ -1,0 +1,114 @@
+{
+  "margin": 0.02,
+  "min_detectable_diff": 0.02721266827243729,
+  "best_highdim_arm": "both_tabpfn",
+  "established_r2": 0.1273476326620181,
+  "arms": {
+    "established_ridge": {
+      "r2": 0.1273476326620181,
+      "repeat_lo": 0.10707725057682949,
+      "repeat_hi": 0.1273476326620181,
+      "n_subjects": 607
+    },
+    "established_tabpfn": {
+      "r2": 0.1547760320550663,
+      "repeat_lo": 0.11592317736727831,
+      "repeat_hi": 0.1547760320550663,
+      "n_subjects": 607
+    },
+    "highdim_elasticnet": {
+      "r2": 0.1448458540738632,
+      "repeat_lo": 0.1085353746744131,
+      "repeat_hi": 0.1448458540738632,
+      "n_subjects": 607
+    },
+    "highdim_histgbm": {
+      "r2": 0.05926278846353872,
+      "repeat_lo": 0.008976380466266032,
+      "repeat_hi": 0.05926278846353872,
+      "n_subjects": 607
+    },
+    "highdim_tabpfn": {
+      "r2": 0.18432935264049854,
+      "repeat_lo": 0.13536290650371263,
+      "repeat_hi": 0.18432935264049854,
+      "n_subjects": 607
+    },
+    "both_elasticnet": {
+      "r2": 0.15538574577922348,
+      "repeat_lo": 0.117262431937729,
+      "repeat_hi": 0.15538574577922348,
+      "n_subjects": 607
+    },
+    "both_histgbm": {
+      "r2": 0.09243338447870564,
+      "repeat_lo": -0.0025488666955191253,
+      "repeat_hi": 0.09243338447870564,
+      "n_subjects": 607
+    },
+    "both_tabpfn": {
+      "r2": 0.18794450382255823,
+      "repeat_lo": 0.14739504641026313,
+      "repeat_hi": 0.18794450382255823,
+      "n_subjects": 607
+    }
+  },
+  "key_contrast": {
+    "best_highdim_minus_established": 0.06059687116054013,
+    "range_lo": 0.03338420288810284,
+    "range_hi": 0.06059687116054013,
+    "equivalent": false,
+    "superior": true,
+    "status": "superior",
+    "margin": 0.02,
+    "min_detectable_diff": 0.02721266827243729,
+    "verdict": "NOT EQUIVALENT (high-dim/AI superior): every-seed gain clears the margin (lower range 0.0334 >= margin 0.0200; best diff = 0.0606)"
+  },
+  "fairness_contrast": {
+    "established_tabpfn_r2": 0.1547760320550663,
+    "model_class_effect": 0.027428399393048197,
+    "featureset_effect_highdim": 0.029553320585432252,
+    "featureset_effect_both": 0.033168471767491936
+  },
+  "cv_config": {
+    "n_outer": 5,
+    "n_inner": 5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "provenance": {
+    "python": "3.11.15",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "sklearn": "1.5.2",
+    "scipy": "1.13.1",
+    "tabpfn": "8.0.8",
+    "tabdpt": null,
+    "torch": "2.6.0+cu124",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "thread_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "TABPFN_DEVICE": "cuda",
+      "TABPFN_N_ESTIMATORS": null
+    },
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 4070 SUPER",
+    "git_sha": null,
+    "n_outer": 5,
+    "n_inner": 5,
+    "n_seeds": 5
+  }
+}

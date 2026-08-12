@@ -1,0 +1,12 @@
+{
+  "n": 816,
+  "prevalence": 0.1017156862745098,
+  "mean_carrier": -0.314257440283115,
+  "mean_noncarrier": -0.10510456929396648,
+  "difference": -0.20915287098914848,
+  "cohens_d": -0.4985285120933382,
+  "r2_ceiling_at_this_prevalence": 0.022708149931086132,
+  "observed_dr2": 0.0116,
+  "csf_dr2": 0.0581,
+  "caveat": "prevalence-bounded; not a fair head-to-head with a continuous block"
+}

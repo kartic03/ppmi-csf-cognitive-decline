@@ -1,0 +1,61 @@
+{
+  "source_claim": "Botta 2026 PMID 41730900 doi:10.1038/s41531-026-01290-2 \u2014 APOE e4 effect in sporadic PD, absent in GBA1/LRRK2",
+  "strata": [
+    {
+      "stratum": "ALL PD (pooled, as analysed)",
+      "slope_n_carrier": 182,
+      "slope_n_non": 626,
+      "slope_mean_carrier": -0.09811317218348035,
+      "slope_mean_non": -0.1350611912364663,
+      "slope_diff": 0.036948019052985934,
+      "slope_p": 0.2999858815691513,
+      "conv_carrier_rate": 0.2783018867924528,
+      "conv_non_rate": 0.2859154929577465,
+      "conv_n_carrier": 212,
+      "conv_n_non": 710,
+      "conv_p": 0.8625428475840562
+    },
+    {
+      "stratum": "SPORADIC only (Botta's group)",
+      "slope_n_carrier": 130,
+      "slope_n_non": 424,
+      "slope_mean_carrier": -0.0756115646400308,
+      "slope_mean_non": -0.10933602603143526,
+      "slope_diff": 0.03372446139140446,
+      "slope_p": 0.24979496231512965,
+      "conv_carrier_rate": 0.23684210526315788,
+      "conv_non_rate": 0.2085889570552147,
+      "conv_n_carrier": 152,
+      "conv_n_non": 489,
+      "conv_p": 0.4979564458570181
+    },
+    {
+      "stratum": "GBA carriers",
+      "slope_n_carrier": 19,
+      "slope_n_non": 64,
+      "slope_mean_carrier": -0.21325712744004824,
+      "slope_mean_non": -0.3442419081584004,
+      "slope_diff": 0.13098478071835215,
+      "slope_p": 0.35406996757618436,
+      "conv_carrier_rate": 0.5238095238095238,
+      "conv_non_rate": 0.6301369863013698,
+      "conv_n_carrier": 21,
+      "conv_n_non": 73,
+      "conv_p": 0.4502757519879652
+    },
+    {
+      "stratum": "LRRK2 carriers",
+      "slope_n_carrier": 30,
+      "slope_n_non": 115,
+      "slope_mean_carrier": -0.1200778888649515,
+      "slope_mean_non": -0.06007241358794358,
+      "slope_diff": -0.060005475277007926,
+      "slope_p": 0.4478595978028127,
+      "conv_carrier_rate": 0.3333333333333333,
+      "conv_non_rate": 0.4065040650406504,
+      "conv_n_carrier": 36,
+      "conv_n_non": 123,
+      "conv_p": 0.560410324259714
+    }
+  ]
+}
