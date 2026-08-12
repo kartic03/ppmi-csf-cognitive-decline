@@ -1,0 +1,44 @@
+[workspace]
+name = "dbs-bbb-progression"
+description = "Corrected PPMI multimodal PD motor-progression study (Phase 1 kill-gate onward)"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.11.*"
+numpy = ">=1.26,<2.1"
+pandas = ">=2.1,<2.3"
+scipy = ">=1.11,<1.14"
+scikit-learn = ">=1.4,<1.6"
+statsmodels = ">=0.14"
+scikit-survival = ">=0.22,<0.24"
+lifelines = ">=0.28"
+openpyxl = ">=3.1"
+pyarrow = ">=15"
+matplotlib = ">=3.8"
+seaborn = ">=0.13"
+jupyterlab = ">=4.0"
+python-calamine = ">=0.6.1,<0.7"
+pytest = ">=8.0"
+# plink lives in the default (clean numpy) env. R is NOT a pixi dependency:
+# co-installing r-base with numpy in one conda env caused intermittent OpenBLAS
+# segfaults (R's BLAS/libgomp vs numpy's OpenBLAS). R lives only in the separate
+# ~/r_coloc_env (coloc + susieR), invoked by the coloc step via its absolute path.
+plink = "*"
+
+[activation.env]
+PYTHONUNBUFFERED = "1"
+# single-thread BLAS: avoids intermittent OpenBLAS segfaults in numpy/scipy/sklearn
+OMP_NUM_THREADS = "1"
+OPENBLAS_NUM_THREADS = "1"
+MKL_NUM_THREADS = "1"
+NUMEXPR_NUM_THREADS = "1"
+
+[tasks]
+lab = "jupyter lab"
+# Phase-1 pipeline tasks (scripts added as we build them)
+inspect = "python src/phase1/00_inspect_data.py"
+build-cohort = { cmd = "python src/phase1/01_build_cohort.py", inputs = ["data/raw/"], outputs = ["data/processed/phase1/"] }
+outcome = { cmd = "python src/phase1/02_build_outcome.py", depends-on = ["build-cohort"] }
+killgate = { cmd = "python src/phase1/03_killgate.py", depends-on = ["outcome"] }
+phase1 = { cmd = "echo 'Phase 1 complete'", depends-on = ["killgate"] }
