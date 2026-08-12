@@ -1,0 +1,19 @@
+# raw PPMI data is never redistributable under the data use agreement
+data/raw/
+data/interim/
+
+__pycache__/
+*.pyc
+.pixi/
+.ipynb_checkpoints/
+
+# credentials live outside the repo
+*.token
+.env
+
+# PPMI participant-level data is never redistributable under the data use
+# agreement. These are derived, but they are keyed by PATNO / subject_id and
+# are re-identifiable by anyone with PPMI access, so they stay out.
+data/processed/phase1/
+data/processed/phase2/outcome.parquet
+*curated_cut*
