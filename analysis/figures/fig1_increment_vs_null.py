@@ -22,7 +22,7 @@ n, cv_config and column lists; that value is instead exactly equal to
 increment.json rq1_csf.perm_observed_dr2_fixed, i.e. the fixed-alpha
 permutation estimator rather than the tuned nested-CV one. estimand_audit.json
 reproduces the committed control arm to the last digit and is used instead.
-See revision/checks/estimand_vs_enriched_baseline_diff.md.
+See analysis/figures/ARTIFACT_INTEGRITY_SWEEP.md.
 """
 import json
 import os
@@ -36,7 +36,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from figstyle import apply_figure_style, bbox_check, panel_letter, set_frame
 
-# Repo-relative. This file lives at <repo>/revision/figures/, so the repo
+# Repo-relative. This file lives at <repo>/analysis/figures/, so the repo
 # root is two levels up. That holds in the WSL repro environment and in a
 # clean checkout, so a figure is never built against a path that exists on
 # only one machine.

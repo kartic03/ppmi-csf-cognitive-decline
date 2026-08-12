@@ -14,7 +14,7 @@ PROVENANCE
   visit / censoring strata . phase2/phase1_visit_split.json results.eb_slope.cells
   conversion endpoint AUC .. phase2/hlavnicka_head2head.json arms
 
-ON batch1_checks.json  (see revision/figures/ARTIFACT_INTEGRITY_SWEEP.md)
+ON batch1_checks.json  (see analysis/figures/ARTIFACT_INTEGRITY_SWEEP.md)
   It is the ONLY artifact in data/processed carrying age-tertile dR2.
   It is PARTIALLY superseded and the scope is section-level:
   noise_floor_distribution.json replaces its `noise_block` single-draw figure
@@ -38,7 +38,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from figstyle import apply_figure_style, bbox_check, panel_letter, set_frame
 
-# Repo-relative. This file lives at <repo>/revision/figures/, so the repo
+# Repo-relative. This file lives at <repo>/analysis/figures/, so the repo
 # root is two levels up. That holds in the WSL repro environment and in a
 # clean checkout, so a figure is never built against a path that exists on
 # only one machine.

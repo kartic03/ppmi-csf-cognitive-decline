@@ -4,14 +4,14 @@ Every numeral in every caption is READ FROM THE ARTIFACTS at runtime and
 formatted into the text. Nothing is transcribed by hand, so a caption cannot
 drift from the figure it describes.
 
-Writes: revision/figures/captions.md
+Writes: analysis/figures/captions.md
 """
 import json
 import os
 
 import pandas as pd
 
-# Repo-relative. This file lives at <repo>/revision/figures/, so the repo
+# Repo-relative. This file lives at <repo>/analysis/figures/, so the repo
 # root is two levels up. That holds in the WSL repro environment and in a
 # clean checkout, so a figure is never built against a path that exists on
 # only one machine.

@@ -51,7 +51,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from figstyle import apply_figure_style, bbox_check, panel_letter, set_frame
 
-# Repo-relative. This file lives at <repo>/revision/figures/, so the repo
+# Repo-relative. This file lives at <repo>/analysis/figures/, so the repo
 # root is two levels up. That holds in the WSL repro environment and in a
 # clean checkout, so a figure is never built against a path that exists on
 # only one machine.

@@ -26,7 +26,7 @@ TWO DISTINCT QUANTITIES, DELIBERATELY NOT CONFLATED
   labelled a flexible calibration curve. The two quantities are annotated
   separately and sourced separately.
 
-ON calibration.json  (see revision/figures/ARTIFACT_INTEGRITY_SWEEP.md)
+ON calibration.json  (see analysis/figures/ARTIFACT_INTEGRITY_SWEEP.md)
   Not in the original figure brief; audited into the sweep as a figure source.
   Its continuous.calib_slope agrees with calibration_flexible.json's
   overall_slope at its stored 4 dp (delta ~4.9e-06) -- a ROUNDED verdict, not
@@ -43,7 +43,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from figstyle import apply_figure_style, bbox_check, panel_letter, set_frame
 
-# Repo-relative. This file lives at <repo>/revision/figures/, so the repo
+# Repo-relative. This file lives at <repo>/analysis/figures/, so the repo
 # root is two levels up. That holds in the WSL repro environment and in a
 # clean checkout, so a figure is never built against a path that exists on
 # only one machine.

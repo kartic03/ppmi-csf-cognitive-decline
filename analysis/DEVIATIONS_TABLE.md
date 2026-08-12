@@ -73,4 +73,4 @@ the within-CSF decomposition (9 subsets); the enriched-comparator arm; the RQ4 b
 
 ---
 
-*Maintained alongside `SESSION_CONTEXT_2026-08-04.md`. Every figure traceable to a JSON artifact under `data/processed/`.*
+*Every figure traceable to a JSON artifact under `data/processed/`.*
