@@ -143,7 +143,24 @@ The abstract was rebuilt to the Springer Nature shape and now ends on an implica
 
 **One known imprecision in my own work:** the formula behind `instability_median` is not recoverable — the producing script is not in the repo and the artifact records only the value and a note. The Methods describe it at the level the artifact supports.
 
-## 8. Open
+## 8. Figure verification, end to end
+
+Every figure was checked against its legend, against `captions.md`, and against the body text. The method matters: rather than reading descriptions, all six scripts were **run** and their runtime value-to-artifact provenance captured, so the comparison is against what is actually drawn.
+
+| check | result |
+|---|---|
+| legend values vs plotted values, all six figures | **36 / 36 match** |
+| `captions.md` regenerated from current artifacts | **byte-identical**, despite its 5 Aug date |
+| body text vs plotted values | matches throughout |
+| errors found | **1** |
+
+**The one error.** Results read "leave-one-site-out costs the increment 0.009 while it costs the model as a whole 0.036". The 0.036 is right under either convention, but 0.009 came from subtracting the rounded display values (0.053 − 0.044); from the artifacts it is 0.0525044 − 0.0440169 = 0.0084875, so **0.008**. One sentence, two conventions, and recomputable by any reviewer straight off the Figure 4b bars. Corrected.
+
+**Two non-problems, recorded so they are not re-investigated.** The `0.765` in the Figure 4 caption is the k = 11 pooled-cluster arm, and the caption itself states it "is not used anywhere". The `−0.0115` in the Figure 5 caption is the null band's minimum, correctly paired with its `+0.0133` maximum.
+
+**A gotcha worth remembering.** The manuscript uses the Unicode minus sign (U+2212), so a regex written `-?\d+\.\d+` reads `−0.004` as `+0.004` and manufactures four false mismatches. Match `[-−]?` and normalise before comparing.
+
+## 9. Open
 
 - **LLM-disclosure statement** in Methods, which npj requires outright.
 
