@@ -2,7 +2,7 @@
 
 **Purpose.** A single dated record of every departure from the pre-registered plan, with its reason and its effect on the claim. Individually each deviation below is defensible; scattered through a Discussion they would read as drift. Collected here they are an audit trail.
 
-**Pre-registration:** OSF DOI 10.17605/OSF.IO/P9TMB (osf.io/p9tmb), registered 2026-07-17, under project osf.io/6rka8. Source text `revision/B5/OSF_PREREG_SUBMISSION.md`; addendum `revision/B5/PREREG_ADDENDUM_B5.md`.
+**Pre-registration:** OSF DOI 10.17605/OSF.IO/P9TMB (osf.io/p9tmb), registered 2026-07-17, under project osf.io/6rka8. The registration text and its addendum are available on OSF at that DOI.
 
 **SCOPE OF THE REGISTRATION — read before writing the word "pre-registered" anywhere (added 2026-08-05).** The OSF registration covers the **external PDBP test only**. Its own text is explicit: *"PPMI is the discovery cohort; PDBP is the confirmatory cohort and is unseen at the time of this registration… This registration fixes the primary estimand… before any PDBP outcome-modelling contact."* Registration is stamped **2026-07-17**; the PPMI kill-gates, cohort construction and the entire MR pipeline date from **2026-06-23 to 2026-06-29** (git history). **Therefore: no PPMI-side result in this paper is pre-registered, and none may be described as such.** `DESIGN_REVIEW_v3.md:9` reached this conclusion at design time ("Pre-registration is post-hoc on PPMI; reserve true pre-registration for the unseen PDBP test") and the project has largely honoured it — one violation was found and corrected on 2026-08-05 (`AMYLOID_REFRAME.md:57`, which called the BBB null "pre-registered").
 
