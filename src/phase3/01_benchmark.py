@@ -25,7 +25,8 @@ and EB-outcome refitting as Phase 2):
                          Models: ElasticNet, HistGradientBoostingRegressor, TabPFNRegressor
 
 Analytic set (all arms): subjects who are slope-eligible AND have complete
-established CSF (the binding constraint, N~484). All arms use IDENTICAL
+established CSF (the binding constraint, N=607, the same analytic set as the
+phase 2 RQ1 analysis). All arms use IDENTICAL
 analytic_ids so fold partitions are guaranteed identical across arms.
 
 Equivalence test:
@@ -543,7 +544,7 @@ def _load_established_csf(curated_path, nulisa_path, slope_ids):
       ABeta42    : log1p(IU_ABeta42_CSF)
 
     Returns pd.DataFrame indexed by PATNO. Only subjects with ALL five
-    markers are included (CSF-complete, N~484).
+    markers are included (CSF-complete, N=607).
     """
     # NULISA NEFL + pSNCA-129
     nulisa = pd.read_csv(nulisa_path)
